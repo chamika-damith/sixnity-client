@@ -1,26 +1,91 @@
 @import "tailwindcss";
 
+/* ================= LIGHT THEME ================= */
 :root {
+  /* Background */
   --background: #ffffff;
-  --foreground: #171717;
+
+  /* Text */
+  --text-primary: #313730;
+  --text-secondary: #7B7C7C;
+
+  /* Brand / UI colors */
+  --color-primary: #DBEC5B;
+  --color-secondary: #313730;
+  --color-third: #F5F8F7;
+
+  /* Buttons */
+  --button-bg: var(--color-primary);
+  --button-text: var(--color-secondary);
 }
 
+/* ================= TAILWIND THEME MAPPING ================= */
 @theme inline {
   --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-foreground: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+
+  --color-primary: var(--color-primary);
+  --color-secondary: var(--color-secondary);
+  --color-third: var(--color-third);
+
+  --color-button-bg: var(--button-bg);
+  --color-button-text: var(--button-text);
 }
 
+/* ================= DARK THEME ================= */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #313730;
+
+    --text-primary: #ffffff;
+    --text-secondary: #C1C3C1;
+
+    --color-primary: #DBEC5B;
+    --color-secondary: #ffffff;
+    --color-third: #C1C3C1;
+
+    --button-bg: var(--color-primary);
+    --button-text: var(--color-secondary);
   }
 }
 
+/* ================= BASE STYLES ================= */
 body {
   background: var(--background);
-  color: var(--foreground);
+  color: var(--text-primary);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* ================= TYPOGRAPHY ================= */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-primary);
+}
+
+p {
+  color: var(--text-secondary);
+}
+
+/* ================= BUTTON ================= */
+button {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  padding: 0.6rem 1.25rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* ================= TAILWIND VARIABLE UTILITIES ================= */
+.bg-theme        { background-color: var(--background); }
+.bg-primary      { background-color: var(--color-primary); }
+.bg-third        { background-color: var(--color-third); }
+
+.text-primary    { color: var(--text-primary); }
+.text-secondary  { color: var(--text-secondary); }
+.text-brand      { color: var(--color-primary); }
