@@ -108,6 +108,7 @@ export default function Home() {
         <Section7 />
         <Section8 />
         <Footer />
+        {/* Done! */}
       </div>
       
     </div>
