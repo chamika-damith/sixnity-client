@@ -19,6 +19,15 @@
   --button-text: var(--color-secondary);
 }
 
+/* Light mode gradient */
+.bg-primary-gradient {
+  background: linear-gradient(
+    to bottom,
+    rgba(219, 236, 91, 0) 0%,    /* Top: transparent */
+    rgba(219, 236, 91, 0.3) 100% /* Bottom: primary color */
+  );
+}
+
 /* ================= TAILWIND THEME MAPPING ================= */
 @theme inline {
   --color-background: var(--background);
@@ -31,6 +40,8 @@
 
   --color-button-bg: var(--button-bg);
   --color-button-text: var(--button-text);
+
+  --font-family-neutiva: var(--font-neutiva), Arial, Helvetica, sans-serif;
 }
 
 /* ================= DARK THEME ================= */
@@ -48,33 +59,141 @@
     --button-bg: var(--color-primary);
     --button-text: var(--color-secondary);
   }
+
+  /* Dark mode gradient */
+  .bg-primary-gradient {
+    background: linear-gradient(
+      to bottom,
+      rgba(254, 254, 253, 0) 0%,     /* Top: fully transparent */
+      rgba(255, 255, 255, 0.3) 100%  /* Bottom: semi-white */
+    );
+  }
+}
+
+/* ================= CONTAINER ================= */
+@layer components {
+  .container-global {
+    @apply mx-auto
+           px-6 sm:px-8 md:px-10 lg:px-12 xl:px-16 2xl:px-16;
+  }
 }
 
 /* ================= BASE STYLES ================= */
+@font-face {
+  font-family: "Neutiva";
+  src: url("/fonts/Neutiva/Neutiva-Regular.woff2") format("woff2"),
+       url("/fonts/Neutiva/Neutiva-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Neutiva";
+  src: url("/fonts/Neutiva/Neutiva-Bold.woff2") format("woff2"),
+       url("/fonts/Neutiva/Neutiva-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
   background: var(--background);
   color: var(--text-primary);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-neutiva), Arial, Helvetica, sans-serif;
 }
 
 /* ================= TYPOGRAPHY ================= */
 h1, h2, h3, h4, h5, h6 {
-  color: var(--text-primary);
+  
+  font-family: var(--font-neutiva), Arial, Helvetica, sans-serif;
 }
 
-p {
+.description {
+  font-size: 16px;
   color: var(--text-secondary);
+  font-family: "Neutiva", Arial, Helvetica, sans-serif;
+}
+
+.button-description {
+  font-size: 16px;
+  color: var(--color-secondary);
+  font-family: "Neutiva", Arial, Helvetica, sans-serif;
+}
+
+.small-description {
+  font-size: 14px;
+  color: var(--text-secondary);
+  font-family: "Neutiva", Arial, Helvetica, sans-serif;
+}
+
+.title {
+  @apply text-2xl sm:text-3xl md:text-4xl lg:text-3xl xl:text-3xl 2xl:text-3xl font-medium
+}
+.subtitle {
+  @apply text-lg sm:text-3xl md:text-4xl lg:text-xl xl:text-2xl 2xl:text-2xl mt-6 text-center;
 }
 
 /* ================= BUTTON ================= */
-button {
-  background-color: var(--button-bg);
-  color: var(--button-text);
-  padding: 0.6rem 1.25rem;
-  border-radius: 0.5rem;
+.buttonblack {
+  background-color: #313730;
+  color: #ffffff;
+  
+  border-radius: 9999px;
   border: none;
   cursor: pointer;
   transition: opacity 0.2s ease;
+  font-family: "Neutiva", Arial, Helvetica, sans-serif;
+}
+.buttonwhite {
+  background-color: #ffffff;
+  color: #313730;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+  font-family: "Neutiva", Arial, Helvetica, sans-serif;
+}
+
+.buttonblack-section4 {
+  background-color: #313730;
+  color: #ffffff;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-family: "Neutiva", Arial, Helvetica, sans-serif;
+}
+
+.buttonwhite-section4 {
+  background-color: #ffffff;
+  color: #313730;
+  border-radius: 9999px;
+  border: 1px solid #313730;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-family: "Neutiva", Arial, Helvetica, sans-serif;
+}
+
+.blackborder {
+  background-color: transparent;
+  color: #313730;
+  border-radius: 9999px;
+  border: 1px solid #313730;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+  font-family: "Neutiva", Arial, Helvetica, sans-serif;
+}
+
+.buttonwhite {
+  background-color: #ffffff;
+  color: #313730;
+  
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+  font-family: "Neutiva", Arial, Helvetica, sans-serif;
 }
 
 button:hover {
@@ -86,6 +205,21 @@ button:hover {
 .bg-primary      { background-color: var(--color-primary); }
 .bg-third        { background-color: var(--color-third); }
 
-.text-primary    { color: var(--text-primary); }
-.text-secondary  { color: var(--text-secondary); }
-.text-brand      { color: var(--color-primary); }
+.text-primary    { color: var(--text-primary); font-family: "Neutiva", Arial, Helvetica, sans-serif; }
+.text-secondary  { color: var(--text-secondary); font-family: "Neutiva", Arial, Helvetica, sans-serif; }
+.text-brand      { color: var(--color-primary); font-family: "Neutiva", Arial, Helvetica, sans-serif; }
+
+@layer utilities {
+  .font-neutiva {
+    font-family: var(--font-neutiva), Arial, Helvetica, sans-serif !important;
+  }
+  
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}

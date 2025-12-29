@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -10,6 +11,112 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const neutiva = localFont({
+  src: [
+    // Thin
+    {
+      path: "../public/fonts/Neutiva/Neutiva-Thin.woff2",
+      weight: "100",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/Neutiva/Neutiva-ThinItalic.woff2",
+      weight: "100",
+      style: "italic",
+    },
+    // ExtraLight
+    {
+      path: "../public/fonts/Neutiva/Neutiva-ExtraLight.woff2",
+      weight: "200",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/Neutiva/Neutiva-ExtraLightItalic.woff2",
+      weight: "200",
+      style: "italic",
+    },
+    // Light
+    {
+      path: "../public/fonts/Neutiva/Neutiva-Light.woff2",
+      weight: "300",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/Neutiva/Neutiva-LightItalic.woff2",
+      weight: "300",
+      style: "italic",
+    },
+    // Regular
+    {
+      path: "../public/fonts/Neutiva/Neutiva-Regular.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/Neutiva/Neutiva-Italic.woff2",
+      weight: "400",
+      style: "italic",
+    },
+    // Medium
+    {
+      path: "../public/fonts/Neutiva/Neutiva-Medium.woff2",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/Neutiva/Neutiva-MediumItalic.woff2",
+      weight: "500",
+      style: "italic",
+    },
+    // SemiBold
+    {
+      path: "../public/fonts/Neutiva/Neutiva-SemiBold.woff2",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/Neutiva/Neutiva-SemiBoldItalic.woff2",
+      weight: "600",
+      style: "italic",
+    },
+    // Bold
+    {
+      path: "../public/fonts/Neutiva/Neutiva-Bold.woff2",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/Neutiva/Neutiva-BoldItalic.woff2",
+      weight: "700",
+      style: "italic",
+    },
+    // ExtraBold
+    {
+      path: "../public/fonts/Neutiva/Neutiva-ExtraBold.woff2",
+      weight: "800",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/Neutiva/Neutiva-ExtraBoldItalic.woff2",
+      weight: "800",
+      style: "italic",
+    },
+    // Black
+    {
+      path: "../public/fonts/Neutiva/Neutiva-Black.woff2",
+      weight: "900",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/Neutiva/Neutiva-BlackItalic.woff2",
+      weight: "900",
+      style: "italic",
+    },
+  ],
+  variable: "--font-neutiva",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -25,7 +132,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${neutiva.variable} antialiased`}
       >
         {children}
       </body>
