@@ -16,7 +16,7 @@ function Section4() {
 
   return (
     <div className='mt-12'>
-        <div className='grid grid-cols-1 lg:grid-cols-5 gap-4 items-center justify-center'>
+        <div className='grid grid-cols-1 lg:grid-cols-5 gap-4  justify-center'>
             <div className='col-span-1 lg:col-span-2 items-center justify-center text-center lg:text-left'>
                 <h2 className='title mb-4'>
                 Every Move Tracked. Every Result Measured

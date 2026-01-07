@@ -12,8 +12,7 @@ function Section2() {
                 <div className='grid xl:grid-cols-5 gap-4 mt-6'>
                     <div className='xl:col-span-3'>
                         <p className='text-sm sm:text-base md:text-lg lg:text-base xl:text-lg 2xl:text-lg text-text-secondary'>
-                            From gym operations to personal coaching and member progress, everything works together in one smart system.
-                        </p>
+                        From gym operations to personal coaching and member progress, everything works together in one smart system.                        </p>
                     </div>
                     <div className='xl:col-span-2 flex sm:justify-end sm:items-end'>
                         <GetStartButton />
@@ -27,7 +26,7 @@ function Section2() {
                 Your Daily Fitness Insights
                 </h1>
                 <p className='text-sm sm:text-sm md:text-sm lg:text-sm xl:text-sm 2xl:text-base text-text-secondary text-center mt-2' >
-                            From gym operations to personal coaching and member progress, everything works together in one smart system.
+                Track workouts, performance, and progress in real time from any device.
                         </p> 
                         </div>
             </div>

@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import BlackButton from '../Button/BlackButton'
+import DownloadApp from '../Button/DownloadApp'
 
 function Section5() {
     return (
@@ -25,7 +25,7 @@ function Section5() {
                     Track every meal, workout, and calorie in one smart system built to keep you consistent, motivated, and improving every single day without confusion or complexity.
                 </p>
                 <div className='mb-12 sm:mb-16 md:mb-18 lg:mb-8 xl:mb-12 2xl:mb-12'>
-                    <BlackButton />
+                <DownloadApp/>
                 </div>
                 <div className='mb-4'>
                     <div className='flex gap-2 items-start'>

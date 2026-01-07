@@ -14,8 +14,7 @@ function Footer() {
                         SIXFINITY
                     </h1>
                     <p className='description mt-8 mb-4'>
-                        Get premium fitness support at a price that works for you. Stay consistent, stay motivated, and grow stronger every day with our cost-friendly solutions.
-                    </p>
+                    An all-in-one fitness platform to manage workouts, members, and performance with speed, clarity, and control.                    </p>
                     <DownloadAppWhite />
 
                 </div>
@@ -74,10 +73,10 @@ function Footer() {
                 </div>
                 <div className='flex flex-col'>
                     <h1 className='title '>
-                        Do you have any questions?
+                    Have a Question? Let’s Talk
                     </h1>
                     <p className='description'>
-                        Feel free to send us your questions or request a free consultation.
+                    Send us your questions and our team will help you get started right away.
                     </p>
                     <Email />
                 </div>

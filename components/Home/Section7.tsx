@@ -32,7 +32,7 @@ function Section7() {
                         <div className='flex justify-end mb-4'>
                             <div className='bg-[#DBEC5B] px-4 py-2 rounded-lg w-fit'>
                                 <p className='button-description'>
-                                Real-Time Body Composition
+                                Instant Body Fat Insights
                                 </p>
                             </div>
                         </div>
@@ -53,7 +53,7 @@ function Section7() {
                     <div className='flex justify-end'>
                         <div className='bg-[#DBEC5B] px-4 py-2 rounded-lg w-fit'>
                             <p className='button-description'>
-                            Real-Time Body Composition
+                            Full Body Metrics at a Glance
                             </p>
                         </div>
                     </div>
@@ -68,7 +68,7 @@ function Section7() {
                     <div className='flex justify-end'>
                         <div className='bg-[#DBEC5B] px-4 py-2 rounded-lg w-fit'>
                             <p className='button-description'>
-                            Real-Time Body Composition
+                            Daily Calories Burned
                             </p>
                         </div>
                     </div>

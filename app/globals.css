@@ -185,6 +185,16 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Neutiva", Arial, Helvetica, sans-serif;
 }
 
+.mail {
+  background-color: transparent;
+  color: #313730;
+  border-radius: 9999px;
+  border: 1px solid #313730;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+  font-family: "Neutiva", Arial, Helvetica, sans-serif;
+}
+
 .buttonwhite {
   background-color: #ffffff;
   color: #313730;
