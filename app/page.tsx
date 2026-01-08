@@ -32,7 +32,7 @@ export default function Home() {
         <div className="relative z-10 grid grid-cols-1 lg:grid-cols-5 gap-0 sm:gap-0 md:gap-0 lg:gap-2 xl:gap-2 2xl:gap-4 items-end  lg:pl-8 xl:pl-10 2xl:pl-10">
           <div className="col-span-1 lg:col-span-2 px-6 lg:px-0 w-full h-full pt-8 sm:pt-8 md:pt-8 lg:pt-6 pb-6 md:px-6">
             <div>
-              <h1 className="font-neutiva text-[40px] lg:text-[30px] xl:text-[60px] 2xl:text-[80px]  font-regular  xl:leading-[60px] 2xl:leading-[80px] leading-[40px] text-transparent bg-clip-text bg-linear-to-b from-[#313730] to-[rgba(49,55,48,0.6)]">
+              <h1 className="font-neutiva text-[40px] lg:text-[30px] xl:text-[60px] 2xl:text-[80px]  font-regular  xl:leading-[60px] 2xl:leading-[80px] leading-[40px] text-transparent bg-clip-text bg-linear-to-b from-[#313730] to-[rgba(49,55,48,0.6)] dark:from-[#ffffff] dark:to-[rgba(255,255,255,0.6)]">
                 Boost Your Fitness, Without Breaking the Bank
               </h1>
               <div className="my-6">

@@ -47,14 +47,14 @@
 /* ================= DARK THEME ================= */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #313730;
+    --background: #000000;
 
     --text-primary: #ffffff;
     --text-secondary: #C1C3C1;
 
     --color-primary: #DBEC5B;
     --color-secondary: #ffffff;
-    --color-third: #C1C3C1;
+    --color-third: #404040;
 
     --button-bg: var(--color-primary);
     --button-text: var(--color-secondary);
@@ -66,6 +66,8 @@
       to bottom,
       rgba(254, 254, 253, 0) 0%,     /* Top: fully transparent */
       rgba(255, 255, 255, 0.3) 100%  /* Bottom: semi-white */
+
+      
     );
   }
 }
