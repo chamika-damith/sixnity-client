@@ -51,7 +51,7 @@ function Section8() {
         {/* LEFT SIDE */}
         <div className="col-span-1 lg:col-span-5 h-full flex flex-col">
           <h1 className="title">
-            Where Real<br /> Transformations Begin
+          Where Real<br /> Transformations Begin
           </h1>
 
           <div className="grid grid-cols-2 gap-4 mt-6 flex-1 min-h-[200px] sm:min-h-[250px] md:min-h-[300px]">
@@ -95,7 +95,7 @@ function Section8() {
                       <p className="text-xl text-[#DBEC5B]">
                         – {review.role}
                       </p>
-                    </div>
+              </div>
 
                     <p className="small-description mt-4">
                       {review.testimonial}
@@ -108,9 +108,9 @@ function Section8() {
                         width={100}
                         height={20}
                       />
-                    </div>
-                  </div>
-                </div>
+              </div>
+              </div>
+             </div>
               ))}
             </div>
           </div>

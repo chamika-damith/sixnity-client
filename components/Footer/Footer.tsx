@@ -7,7 +7,7 @@ function Footer() {
     return (
         <footer className=" mt-12 pt-12 pb-8">
             <div className='rounded-4xl p-[2px]' style={{ background: 'linear-gradient(to bottom, rgba(222, 222, 222, 1) 0%, rgba(222, 222, 222, 0) 100%)' }}>
-            <div className='bg-white rounded-4xl'>
+            <div className='bg-white dark:bg-[#404040] rounded-4xl'>
             <div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-4 p-10'>
                 <div className=''>
                     <h1 className='title '>

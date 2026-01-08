@@ -13,7 +13,7 @@ function Navbar() {
   }
 
   return (
-    <nav className={`w-full bg-white/80 backdrop-blur-md sticky top-0 z-50 lg:shadow-none ${isMenuOpen ? 'shadow-[0_2px_4px_rgba(0,0,0,0.1)]' : ''}`}>
+    <nav className={`w-full bg-white/80 dark:bg-black/80 backdrop-blur-md sticky top-0 z-50 lg:shadow-none ${isMenuOpen ? 'shadow-[0_2px_4px_rgba(0,0,0,0.1)]' : ''}`}>
       <div className="container container-global">
         <div className="flex items-center justify-between py-4">
           {/* Logo/Brand */}
@@ -112,7 +112,7 @@ function Navbar() {
             </div>
           </div>
         )}
-      </div>
+    </div>
     </nav>
   )
 }
