@@ -70,6 +70,41 @@
       
     );
   }
+
+  /* ================= DARK THEME BUTTONS ================= */
+  button.buttonblack,
+  .buttonblack {
+    background-color: #ffffff !important;
+    color: #313730 !important;
+  }
+
+  button.blackborder,
+  .blackborder {
+    background-color: transparent !important;
+    color: #ffffff !important;
+    border: 1px solid #ffffff !important;
+  }
+
+  button.buttonwhite-section4,
+  .buttonwhite-section4 {
+    background-color: transparent !important;
+    color: #ffffff !important;
+    border: 1px solid #ffffff !important;
+  }
+
+  button.buttonblack-section4,
+  .buttonblack-section4 {
+    background-color: #ffffff !important;
+    color: #313730 !important;
+    border: none !important;
+  }
+
+  button.mail,
+  .mail {
+    background-color: transparent !important;
+    color: #ffffff !important;
+    border: 1px solid #ffffff !important;
+  }
 }
 
 /* ================= CONTAINER ================= */
@@ -140,7 +175,15 @@ h1, h2, h3, h4, h5, h6 {
 .buttonblack {
   background-color: #313730;
   color: #ffffff;
-  
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+  font-family: "Neutiva", Arial, Helvetica, sans-serif;
+}
+.buttonblackdark {
+  background-color: #ffffff;
+  color: #313730;
   border-radius: 9999px;
   border: none;
   cursor: pointer;
