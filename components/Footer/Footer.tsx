@@ -29,13 +29,7 @@ function Footer() {
                                 <a href="#">Home</a>
                             </li>
                             <li>
-                                <a href="#">About</a>
-                            </li>
-                            <li>
                                 <a href="#">Program</a>
-                            </li>
-                            <li>
-                                <a href="#">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -63,7 +57,7 @@ function Footer() {
             <div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-4 p-10 items-end'>
                 <div className='flex flex-row gap-4 items-end'>
                     <Image src="/images/Icons/Facebook.svg" alt="logo" width={100} height={100} className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 lg:w-9 lg:h-9 xl:w-10 xl:h-10 2xl:w-12 2xl:h-12 object-contain" />
-                    <Image src="/images/Icons/Insta.svg" alt="logo" width={100} height={100} className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 lg:w-9 lg:h-9 xl:w-10 xl:h-10 2xl:w-12 2xl:h-12 object-contain" />
+                    <Image src="/images/Icons/Insta.svg" alt="logo" width={100} height={100} className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 lg:w-9 lg:h-9 xl:w-10 xl:h-10 2xl:w-12 2xl:h-12 object-contain " />
                     <Image src="/images/Icons/Youtube.svg" alt="logo" width={100} height={100} className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 lg:w-9 lg:h-9 xl:w-10 xl:h-10 2xl:w-12 2xl:h-12 object-contain" />
                 </div>
                 <div className='flex items-start lg:items-end'>

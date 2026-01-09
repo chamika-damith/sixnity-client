@@ -28,17 +28,8 @@ function Navbar() {
             <Link href="/" className="font-neutiva text-sm text-text-primary hover:text-primary transition-colors">
               Home
             </Link>
-            <Link href="/trainer" className="font-neutiva text-sm text-text-primary hover:text-primary transition-colors">
-              Trainer
-            </Link>
-            <Link href="/membership" className="font-neutiva text-sm text-text-primary hover:text-primary transition-colors">
-              Membership
-            </Link>
             <Link href="/program" className="font-neutiva text-sm text-text-primary hover:text-primary transition-colors">
-              Program
-            </Link>
-            <Link href="/contact" className="font-neutiva text-sm text-text-primary hover:text-primary transition-colors">
-              Contact
+              Why Choose Us
             </Link>
           </div>
 
@@ -78,32 +69,11 @@ function Navbar() {
                 Home
               </Link>
               <Link 
-                href="/trainer" 
-                onClick={toggleMenu}
-                className="font-neutiva text-sm text-text-primary hover:text-primary transition-colors py-2"
-              >
-                Trainer
-              </Link>
-              <Link 
-                href="/membership" 
-                onClick={toggleMenu}
-                className="font-neutiva text-sm text-text-primary hover:text-primary transition-colors py-2"
-              >
-                Membership
-              </Link>
-              <Link 
                 href="/program" 
                 onClick={toggleMenu}
                 className="font-neutiva text-sm text-text-primary hover:text-primary transition-colors py-2"
               >
-                Program
-              </Link>
-              <Link 
-                href="/contact" 
-                onClick={toggleMenu}
-                className="font-neutiva text-sm text-text-primary hover:text-primary transition-colors py-2"
-              >
-                Contact
+                Why Choose Us
               </Link>
               <div className="flex flex-row gap-3 pt-2">
                 <LoginButton />
