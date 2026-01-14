@@ -109,5 +109,5 @@ const StyledWrapper = styled.div`
     filter: drop-shadow(0px 0px 0.03rem rgb(0, 0, 0))
       drop-shadow(0px 0px 0.02rem rgb(0, 0, 0));
   }`;
-
+// Test
 export default Loader;
