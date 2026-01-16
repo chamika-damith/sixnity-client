@@ -19,7 +19,7 @@ function Navbar() {
           {/* Logo/Brand */}
           <div className="flex items-center">
             <Link href="/" className="font-neutiva text-2xl font-bold text-primary uppercase">
-              sixfinity
+              SIXNITIY
             </Link>
           </div>
 
