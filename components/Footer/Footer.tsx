@@ -10,9 +10,18 @@ function Footer() {
             <div className='bg-white dark:bg-[#404040] rounded-4xl'>
             <div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-4 p-10'>
                 <div className=''>
-                    <h1 className='title '>
-                        SIXNITIY
-                    </h1>
+                    <div className='flex items-center gap-3'>
+                        <Image
+                            src="/images/Logo/Sixnity.png"
+                            alt="SIXNITIY Logo"
+                            width={120}
+                            height={40}
+                            className="h-8 w-auto object-contain"
+                        />
+                        <h1 className='title '>
+                            SIXNITIY
+                        </h1>
+                    </div>
                     <p className='description mt-8 mb-4'>
                     An all-in-one fitness platform to manage workouts, members, and performance with speed, clarity, and control.                    </p>
                     <DownloadAppWhite />
@@ -77,7 +86,6 @@ function Footer() {
             </div>
             </div>
             </div>
-            <Image src="/images/Icons/SIXNITIY.svg" alt="logo" width={0} height={0} sizes="100vw" className="w-full h-auto object-contain" />
 
         </footer>
     )
