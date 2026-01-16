@@ -57,7 +57,7 @@ function Section8() {
           <div className="grid grid-cols-2 gap-4 mt-6 flex-1 min-h-[200px] sm:min-h-[250px] md:min-h-[300px]">
             <div className="relative w-full h-full rounded-lg overflow-hidden min-h-[200px] sm:min-h-[250px] md:min-h-[300px]">
               <Image
-                src="/images/Home/Section8/Video1.png"
+                src="/images/Home/Section8/video1.png"
                 alt="Image1"
                 fill
                 className="object-cover"
