@@ -11,7 +11,7 @@ function Footer() {
             <div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-4 p-10'>
                 <div className=''>
                     <h1 className='title '>
-                        SIXFINITY
+                        SIXNITIY
                     </h1>
                     <p className='description mt-8 mb-4'>
                     An all-in-one fitness platform to manage workouts, members, and performance with speed, clarity, and control.                    </p>
@@ -62,7 +62,7 @@ function Footer() {
                 </div>
                 <div className='flex items-start lg:items-end'>
                     <p className='description text-left lg:text-center w-full'>
-                        &copy; 2026 SIXFINITY. All rights reserved.
+                        &copy; 2026 SIXNITIY. All rights reserved.
                     </p>
                 </div>
                 <div className='flex flex-col'>
@@ -77,7 +77,7 @@ function Footer() {
             </div>
             </div>
             </div>
-            <Image src="/images/Icons/SIXFINITY.svg" alt="logo" width={0} height={0} sizes="100vw" className="w-full h-auto object-contain" />
+            <Image src="/images/Icons/SIXNITIY.svg" alt="logo" width={0} height={0} sizes="100vw" className="w-full h-auto object-contain" />
 
         </footer>
     )

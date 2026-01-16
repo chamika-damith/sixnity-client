@@ -7,7 +7,7 @@ function Section2() {
         <div className='grid grid-cols-1 lg:grid-cols-5 gap-4 mt-12'>
             <div className='col-span-1 lg:col-span-3 bg-third rounded-4xl p-8 sm:p-8 md:p-10 lg:p-12 xl:p-14 2xl:p-12'>
                 <h2 className='text-2xl sm:text-3xl md:text-4xl lg:text-3xl xl:text-4xl 2xl:text-4xl font-semibold'>
-                    Why SIXFINITY ?
+                    Why SIXNITIY ?
                 </h2>
                 <div className='grid xl:grid-cols-5 gap-4 mt-6'>
                     <div className='xl:col-span-3'>
