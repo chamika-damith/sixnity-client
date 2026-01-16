@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import LoginButton from '../Button/LoginButton'
 import SignUpButton from '../Button/SignUpButton'
 
@@ -18,8 +19,17 @@ function Navbar() {
         <div className="flex items-center justify-between py-4">
           {/* Logo/Brand */}
           <div className="flex items-center">
-            <Link href="/" className="font-neutiva text-2xl font-bold text-primary uppercase">
-              SIXNITIY
+            <Link href="/" className="flex items-center gap-3">
+              <Image
+                src="/images/Logo/Sixnity.png"
+                alt="SIXNITIY Logo"
+                width={120}
+                height={40}
+                className="h-8 w-auto object-contain"
+              />
+              <span className="font-neutiva text-2xl font-bold text-primary uppercase">
+                SIXNITIY
+              </span>
             </Link>
           </div>
 
