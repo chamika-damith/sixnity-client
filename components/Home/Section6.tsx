@@ -3,11 +3,11 @@ import DownloadApp from '../Button/DownloadApp'
 
 function Section6() {
   return (
-    <div className='mt-12'>
+    <div className='mt-24 mb-12'>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-4 justify-center'>
             <div>
             <h2 className='title mb-4'>
-            Track Everything. Improve Anything.
+            Track Everything.<br /> Improve Anything.
             </h2>
             <DownloadApp/>
             </div>
