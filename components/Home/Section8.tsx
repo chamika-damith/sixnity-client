@@ -56,20 +56,24 @@ function Section8() {
 
           <div className="grid grid-cols-2 gap-4 mt-6 flex-1 min-h-[200px] sm:min-h-[250px] md:min-h-[300px]">
             <div className="relative w-full h-full rounded-lg overflow-hidden min-h-[200px] sm:min-h-[250px] md:min-h-[300px]">
-              <Image
-                src="/images/Home/Section8/video1.png"
-                alt="Image1"
-                fill
-                className="object-cover"
+              <video
+                src="/Video/Video1.mp4"
+                className="w-full h-full object-cover"
+                autoPlay
+                loop
+                muted
+                playsInline
               />
             </div>
 
             <div className="relative w-full h-full rounded-lg overflow-hidden min-h-[200px] sm:min-h-[250px] md:min-h-[300px]">
-              <Image
-                src="/images/Home/Section8/Video2.png"
-                alt="Image2"
-                fill
-                className="object-cover"
+            <video
+                src="/Video/Video3.mp4"
+                className="w-full h-full object-cover"
+                autoPlay
+                loop
+                muted
+                playsInline
               />
             </div>
           </div>
@@ -82,7 +86,7 @@ function Section8() {
             <div className="flex flex-col gap-4">
               {reviewsData.map((review) => (
                 <div key={review.id} className="shrink-0">
-                  <div className="w-full rounded-4xl border-2 border-black p-8">
+                  <div className="w-full rounded-4xl border-2 border-black dark:border-[#404040] hover:border-[#DBEC5B] transition-all duration-300 p-8">
                     <div className="flex gap-2 items-center">
                       <Image
                         src={review.image}

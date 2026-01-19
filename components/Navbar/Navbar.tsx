@@ -3,11 +3,13 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import { usePathname } from 'next/navigation'
 import LoginButton from '../Button/LoginButton'
 import SignUpButton from '../Button/SignUpButton'
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const pathname = usePathname()
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
@@ -35,10 +37,24 @@ function Navbar() {
 
           {/* Navigation Links - Desktop */}
           <div className="hidden lg:flex items-center gap-8">
-            <Link href="/" className="font-neutiva text-sm text-text-primary hover:text-primary transition-colors">
+            <Link 
+              href="/" 
+              className={`font-neutiva text-sm transition-colors ${
+                pathname === '/' 
+                  ? 'text-black dark:text-[#DBEC5B] font-semibold' 
+                  : 'text-text-primary hover:text-primary'
+              }`}
+            >
               Home
             </Link>
-            <Link href="/program" className="font-neutiva text-sm text-text-primary hover:text-primary transition-colors">
+            <Link 
+              href="/program" 
+              className={`font-neutiva text-sm transition-colors ${
+                pathname === '/program' 
+                  ? 'text-black dark:text-[#DBEC5B] font-semibold' 
+                  : 'text-text-primary hover:text-primary'
+              }`}
+            >
               Why Choose Us
             </Link>
           </div>
@@ -74,14 +90,22 @@ function Navbar() {
               <Link 
                 href="/" 
                 onClick={toggleMenu}
-                className="font-neutiva text-sm text-text-primary hover:text-primary transition-colors py-2"
+                className={`font-neutiva text-sm transition-colors py-2 ${
+                  pathname === '/' 
+                    ? 'text-black dark:text-[#DBEC5B] font-semibold' 
+                    : 'text-text-primary hover:text-primary'
+                }`}
               >
                 Home
               </Link>
               <Link 
                 href="/program" 
                 onClick={toggleMenu}
-                className="font-neutiva text-sm text-text-primary hover:text-primary transition-colors py-2"
+                className={`font-neutiva text-sm transition-colors py-2 ${
+                  pathname === '/program' 
+                    ? 'text-black dark:text-[#DBEC5B] font-semibold' 
+                    : 'text-text-primary hover:text-primary'
+                }`}
               >
                 Why Choose Us
               </Link>

@@ -47,7 +47,7 @@ export default function Home() {
   return (
     <div className="">
       <Navbar />
-      <div className="container  container-global">
+      <div className="  container-global">
       <motion.div 
         className="relative w-full min-h-[500px] sm:min-h-[600px] md:min-h-[400px] lg:h-[70vh] xl:h-[90vh] 2xl:h-[90vh]  bg-primary-gradient rounded-lg my-0 sm:my-0 md:my-0 lg:mb-4 xl:mb-4 2xl:my-0 flex flex-col justify-end overflow-hidden"
         initial="initial"
