@@ -5,7 +5,7 @@ import Email from '../Button/Email'
 
 function Footer() {
     return (
-        <footer className=" mt-12 pt-12 pb-8">
+        <footer className="  md:mt-12 pt-12 pb-8 overflow-hidden">
             <div className='rounded-4xl p-[2px]' style={{ background: 'linear-gradient(to bottom, rgba(222, 222, 222, 1) 0%, rgba(222, 222, 222, 0) 100%)' }}>
             <div className='bg-white dark:bg-[#404040] rounded-4xl'>
             <div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-4 p-10'>
@@ -42,7 +42,7 @@ function Footer() {
                             </li>
                         </ul>
                     </div>
-                    <div className="flex flex-row gap-4 mt-4 mb-6 items-start justify-start lg:items-end lg:justify-end">
+                    <div className="flex flex-col sm:flex-row  gap-4 mt-4  items-start justify-start lg:items-end lg:justify-end">
                         <Image
                             src="/images/Home/Googleplay1.png"
                             alt="google"
@@ -63,7 +63,7 @@ function Footer() {
                 </div>
 
             </div>
-            <div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-4 p-10 items-end'>
+            <div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-4 pl-10 pr-10 pb-10 items-end'>
                 <div className='flex flex-row gap-4 items-end'>
                     <Image src="/images/Icons/Facebook.svg" alt="logo" width={100} height={100} className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 lg:w-9 lg:h-9 xl:w-10 xl:h-10 2xl:w-12 2xl:h-12 object-contain" />
                     <Image src="/images/Icons/Insta.svg" alt="logo" width={100} height={100} className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 lg:w-9 lg:h-9 xl:w-10 xl:h-10 2xl:w-12 2xl:h-12 object-contain " />
@@ -85,6 +85,15 @@ function Footer() {
                 </div>
             </div>
             </div>
+            </div>
+            <div className='w-full '>
+                <Image 
+                    src="/images/Home/Footer/SIXFINITY.svg"
+                    alt="SIXNITIY"
+                    width={3798}
+                    height={642}
+                    className="w-full h-auto object-contain"
+                />
             </div>
 
         </footer>

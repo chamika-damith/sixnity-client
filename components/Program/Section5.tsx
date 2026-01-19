@@ -6,7 +6,7 @@ import Image from 'next/image'
 function Section5() {
   return (
     <div className='mt-12'>
-        <div className='grid grid-cols-1 lg:grid-cols-5 gap-4  justify-center'>
+        <div className='grid grid-cols-1 lg:grid-cols-5 gap-4  justify-center items-center'>
             <div className='col-span-1 lg:col-span-2 items-center justify-center lg:text-left'>
                 <h2 className='title mb-4 text-center lg:text-left'>
                 Why SixInfinity Leads in Gym Management
